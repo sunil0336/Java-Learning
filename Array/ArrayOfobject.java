@@ -33,6 +33,12 @@ public class ArrayOfobject {
         for(int i=0;i< stud.length;i++){
             System.out.println(stud[i].marks +" : "+stud[i].name +" : "+ stud[i].marks);
         }
+System.out.println();
+
+// using enhanced for loop
+        for(student s: stud){
+            System.out.println(s.marks +" : "+s.name +" : "+ s.marks);   
+        }
 
     }
 }
