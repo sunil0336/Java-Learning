@@ -8,6 +8,11 @@ class Human{
         name = "sunil";
         System.out.println("in constuctor");
     }
+    public Human(int age,String name){
+        this.age = age;
+        this.name = name;
+        System.out.println("in constuctor with parameters");
+    }
 
     public int getAge() {
         return age;
@@ -31,8 +36,11 @@ public class Conscter {
     public static void main(String[] args) {
         // System.out.println("hello");
         Human obj = new Human();
+        Human obj1 = new Human(23,"rathod");
         obj.setAge(22);
         System.out.println(obj.getAge());
         System.out.println(obj.getName());
+        System.out.println(obj1.getAge());
+        System.out.println(obj1.getName());
     }
 }
