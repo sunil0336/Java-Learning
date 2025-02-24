@@ -31,14 +31,14 @@ class WagonR extends Car{
 }
 
 class UpdatedWagonR extends WagonR{ // concrete class
-    public void drive(){
-        System.out.println("drive");
+    public void reverse(){
+        System.out.println("revsers");
     }
 }
 
 public class AbstractClass {
     public static void main(String[] args) {
-        Car obj = new WagonR();
+        Car obj = new UpdatedWagonR(); // we have to create concrete class obj 
         obj.drive();
         obj.playMusic();
         obj.reverse();
